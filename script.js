@@ -1,86 +1,86 @@
-// Enhanced project data with categories and more details
+// Enhanced project data with Python focus
 const projects = [
   {
     id: 1,
-    title: "E-Commerce Platform",
+    title: "Data Analysis Dashboard",
     description:
-      "A fully responsive e-commerce website with advanced filtering and secure checkout.",
+      "A Python-based dashboard for analyzing and visualizing complex datasets with interactive charts.",
     longDescription:
-      "<p>This e-commerce platform was built with a modern tech stack including React, Node.js, and MongoDB. It features a responsive design, product search and filtering, user authentication, shopping cart, and secure payment processing.</p><p><strong>Key Features:</strong></p><ul><li>User registration and authentication</li><li>Product catalog with advanced filtering</li><li>Shopping cart and wishlist functionality</li><li>Secure payment integration with Stripe</li><li>Order tracking and history</li><li>Admin dashboard for inventory management</li></ul>",
-    image:
-      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
-    tags: ["React", "Node.js", "MongoDB", "Express", "Stripe"],
-    category: "web",
-    liveDemo: "#",
-    sourceCode: "#",
-  },
-  {
-    id: 2,
-    title: "Task Management App",
-    description:
-      "A collaborative task management application with real-time updates.",
-    longDescription:
-      "<p>This task management application helps teams organize their work efficiently. Built with Vue.js and Firebase, it offers real-time collaboration, drag-and-drop functionality, and progress tracking.</p><p><strong>Key Features:</strong></p><ul><li>Real-time collaboration</li><li>Drag-and-drop task management</li><li>Team workspaces with user roles</li><li>File attachments and comments</li><li>Progress tracking and reporting</li><li>Mobile-responsive design</li></ul>",
-    image:
-      "https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1139&q=80",
-    tags: ["Vue.js", "Firebase", "JavaScript", "CSS3"],
-    category: "web",
-    liveDemo: "#",
-    sourceCode: "#",
-  },
-  {
-    id: 3,
-    title: "Weather Dashboard",
-    description:
-      "A beautiful weather dashboard with forecasts and interactive maps.",
-    longDescription:
-      "<p>This weather dashboard provides detailed weather information with an intuitive interface. It uses the OpenWeather API to fetch real-time data and displays it using interactive charts and maps.</p><p><strong>Key Features:</strong></p><ul><li>Current weather conditions</li><li>7-day weather forecast</li><li>Interactive weather maps</li><li>Location-based weather</li><li>Temperature unit conversion</li><li>Responsive design for all devices</li></ul>",
-    image:
-      "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1065&q=80",
-    tags: ["JavaScript", "API Integration", "Chart.js", "HTML5"],
-    category: "web",
-    liveDemo: "#",
-    sourceCode: "#",
-  },
-  {
-    id: 4,
-    title: "Data Analysis Tool",
-    description:
-      "A Python-based tool for analyzing and visualizing complex datasets.",
-    longDescription:
-      "<p>This data analysis tool processes large datasets and generates insightful visualizations. Built with Python and libraries like Pandas, NumPy, and Matplotlib, it helps users make data-driven decisions.</p><p><strong>Key Features:</strong></p><ul><li>Data import from multiple formats (CSV, Excel, JSON)</li><li>Statistical analysis and reporting</li><li>Interactive data visualizations</li><li>Export options for reports and charts</li><li>Customizable analysis parameters</li></ul>",
+      "<p>This data analysis dashboard processes large datasets and generates insightful visualizations. Built with Python and libraries like Pandas, NumPy, and Matplotlib, it helps users make data-driven decisions.</p><p><strong>Key Features:</strong></p><ul><li>Data import from multiple formats (CSV, Excel, JSON)</li><li>Statistical analysis and reporting</li><li>Interactive data visualizations</li><li>Export options for reports and charts</li><li>Customizable analysis parameters</li></ul>",
     image:
       "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
-    tags: ["Python", "Pandas", "NumPy", "Matplotlib"],
+    tags: ["Python", "Pandas", "NumPy", "Matplotlib", "Data Analysis"],
     category: "python",
     liveDemo: "#",
     sourceCode: "#",
   },
   {
-    id: 5,
-    title: "Portfolio Website",
+    id: 2,
+    title: "Web Scraper & Data Collector",
     description:
-      "A responsive portfolio website with modern design and animations.",
+      "A Python script that automatically collects and organizes data from multiple websites.",
     longDescription:
-      "<p>This portfolio website template features a clean, modern design that effectively showcases projects and skills. It includes smooth animations, a contact form, and is fully responsive across all devices.</p><p><strong>Key Features:</strong></p><ul><li>Responsive design for all screen sizes</li><li>Project showcase with filtering</li><li>Contact form with validation</li><li>Dark/light mode toggle</li><li>Smooth scrolling animations</li><li>Performance optimized</li></ul>",
+      "<p>This web scraping tool efficiently collects data from various online sources and organizes it into structured formats. Built with BeautifulSoup and Requests libraries, it can handle different website structures and anti-bot measures.</p><p><strong>Key Features:</strong></p><ul><li>Multi-site data collection</li><li>Data cleaning and organization</li><li>Export to CSV, Excel, or JSON</li><li>Error handling and retry logic</li><li>Customizable scraping parameters</li></ul>",
     image:
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1115&q=80",
-    tags: ["HTML5", "CSS3", "JavaScript", "Responsive Design"],
-    category: "design",
+      "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
+    tags: ["Python", "Web Scraping", "BeautifulSoup", "Automation"],
+    category: "python",
+    liveDemo: "#",
+    sourceCode: "#",
+  },
+  {
+    id: 3,
+    title: "Task Automation Scripts",
+    description:
+      "A collection of Python scripts that automate repetitive computer tasks.",
+    longDescription:
+      "<p>These automation scripts handle various repetitive tasks like file organization, data processing, and system maintenance. Built with Python's standard library and third-party modules, they save time and reduce manual errors.</p><p><strong>Key Features:</strong></p><ul><li>File organization and sorting</li><li>Batch processing of documents</li><li>Automated data entry</li><li>System maintenance tasks</li><li>Customizable for specific needs</li></ul>",
+    image:
+      "https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
+    tags: ["Python", "Automation", "Scripting", "Productivity"],
+    category: "python",
+    liveDemo: "#",
+    sourceCode: "#",
+  },
+  {
+    id: 4,
+    title: "Flask Web Application",
+    description:
+      "A responsive web application built with Python Flask framework.",
+    longDescription:
+      "<p>This web application demonstrates backend development with Python Flask. It includes user authentication, database integration, and a responsive frontend.</p><p><strong>Key Features:</strong></p><ul><li>User registration and authentication</li><li>Database integration with SQLAlchemy</li><li>RESTful API endpoints</li><li>Responsive frontend design</li><li>Form validation and error handling</li></ul>",
+    image:
+      "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
+    tags: ["Python", "Flask", "Web Development", "SQL"],
+    category: "web",
+    liveDemo: "#",
+    sourceCode: "#",
+  },
+  {
+    id: 5,
+    title: "Data Visualization Tool",
+    description:
+      "A tool for creating interactive charts and graphs from datasets.",
+    longDescription:
+      "<p>This data visualization tool transforms raw data into meaningful visual representations. Using Python's visualization libraries, it creates charts that help in understanding patterns and trends.</p><p><strong>Key Features:</strong></p><ul><li>Multiple chart types (bar, line, pie, scatter)</li><li>Interactive elements and tooltips</li><li>Customizable styling options</li><li>Export as image or PDF</li><li>Real-time data updates</li></ul>",
+    image:
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
+    tags: ["Python", "Data Visualization", "Matplotlib", "Seaborn"],
+    category: "data",
     liveDemo: "#",
     sourceCode: "#",
   },
   {
     id: 6,
-    title: "Mobile Fitness App",
+    title: "Portfolio Website",
     description:
-      "A cross-platform mobile app for tracking workouts and nutrition.",
+      "A responsive portfolio website showcasing my projects and skills.",
     longDescription:
-      "<p>This fitness application helps users track their workouts, nutrition, and progress. Built with React Native, it offers a seamless experience on both iOS and Android devices.</p><p><strong>Key Features:</strong></p><ul><li>Workout tracking with custom routines</li><li>Nutrition logging with barcode scanning</li><li>Progress charts and statistics</li><li>Social features for motivation</li><li>Offline functionality</li><li>Push notifications</li></ul>",
+      "<p>This portfolio website features a clean, modern design that effectively showcases projects and skills. It includes smooth animations, a contact form, and is fully responsive across all devices.</p><p><strong>Key Features:</strong></p><ul><li>Responsive design for all screen sizes</li><li>Project showcase with filtering</li><li>Contact form with validation</li><li>Dark/light mode toggle</li><li>Smooth scrolling animations</li><li>Performance optimized</li></ul>",
     image:
-      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
-    tags: ["React Native", "Firebase", "Redux", "Mobile"],
-    category: "mobile",
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1115&q=80",
+    tags: ["HTML5", "CSS3", "JavaScript", "Responsive Design"],
+    category: "web",
     liveDemo: "#",
     sourceCode: "#",
   },
@@ -122,28 +122,28 @@ function renderProjects(projectsToRender) {
     projectCard.className = `project-card ${project.category}`;
     projectCard.setAttribute("data-category", project.category);
     projectCard.innerHTML = `
-                    <img src="${project.image}" alt="${
+          <img src="${project.image}" alt="${
       project.title
     }" class="project-img">
-                    <div class="project-content">
-                        <h3 class="project-title">${project.title}</h3>
-                        <div class="project-tags">
-                            ${project.tags
-                              .map((tag) => `<span class="tag">${tag}</span>`)
-                              .join("")}
-                        </div>
-                        <p>${project.description}</p>
-                    </div>
-                    <div class="project-hover-content">
-                        <h3>${project.title}</h3>
-                        <p>${project.description}</p>
-                        <div class="project-links">
-                            <button class="btn view-project" data-id="${
-                              project.id
-                            }">View Details</button>
-                        </div>
-                    </div>
-                `;
+          <div class="project-content">
+            <h3 class="project-title">${project.title}</h3>
+            <div class="project-tags">
+              ${project.tags
+                .map((tag) => `<span class="tag">${tag}</span>`)
+                .join("")}
+            </div>
+            <p>${project.description}</p>
+          </div>
+          <div class="project-hover-content">
+            <h3>${project.title}</h3>
+            <p>${project.description}</p>
+            <div class="project-links">
+              <button class="btn view-project" data-id="${
+                project.id
+              }">View Details</button>
+            </div>
+          </div>
+        `;
     projectsGrid.appendChild(projectCard);
   });
 

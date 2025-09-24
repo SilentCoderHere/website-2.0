@@ -180,17 +180,6 @@ section {
   color: white;
 }
 
-/* Particle Background */
-#particles-js {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  overflow: hidden;
-}
-
 /* Navigation */
 header {
   position: fixed;
@@ -402,25 +391,6 @@ nav {
 }
 
 /* Projects Section */
-.projects-section {
-  background-color: var(--card-bg);
-  border-radius: 30px;
-  margin: 50px 0;
-  box-shadow: var(--shadow);
-  position: relative;
-  overflow: hidden;
-}
-
-.projects-section::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 5px;
-  background: var(--gradient);
-}
-
 .projects-filter {
   display: flex;
   justify-content: center;
@@ -559,10 +529,9 @@ nav {
 
 /* About Section */
 .about-content {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 50px;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .about-text {
@@ -985,6 +954,15 @@ footer {
   .form-control {
     width: 100%;
   }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1006,4 +984,25 @@ footer {
     max-width: 250px;
     text-align: center;
   }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Python Developer Focus */
+.python-highlight {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.python-projects {
+  border-left: 4px solid var(--primary-color);
+  padding-left: 20px;
+  margin: 20px 0;
+}
+
+.python-icon {
+  color: #3776ab;
+  /* Python blue */
 }
