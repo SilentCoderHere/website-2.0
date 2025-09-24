@@ -202,25 +202,9 @@ function toggleTheme() {
   if (document.body.classList.contains("dark-mode")) {
     icon.classList.remove("fa-moon");
     icon.classList.add("fa-sun");
-    // Update particle color for dark mode
-    // particlesJS("particles-js", {
-    //   particles: {
-    //     number: { value: 80, density: { enable: true, value_area: 100 } },
-    //     color: { value: "#8A85FF" },
-    //     line_linked: { color: "#8A85FF" },
-    //   },
-    // });
   } else {
     icon.classList.remove("fa-sun");
     icon.classList.add("fa-moon");
-    // Update particle color for light mode
-    // particlesJS("particles-js", {
-    //   particles: {
-    //     number: { value: 80, density: { enable: true, value_area: 100 } },
-    //     color: { value: "#6C63FF" },
-    //     line_linked: { color: "#6C63FF" },
-    //   },
-    // });
   }
 
   // Save theme preference to localStorage
