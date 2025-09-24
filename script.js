@@ -100,57 +100,9 @@ const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".nav-links");
 const filterBtns = document.querySelectorAll(".filter-btn");
 const contactForm = document.getElementById("contactForm");
-const loadingScreen = document.querySelector(".loading");
 
 // Initialize the page
 document.addEventListener("DOMContentLoaded", function () {
-  // Initialize particles.js
-  particlesJS("particles-js", {
-    particles: {
-      number: { value: 80, density: { enable: true, value_area: 800 } },
-      color: {
-        value: document.body.classList.contains("dark-mode")
-          ? "#8A85FF"
-          : "#6C63FF",
-      },
-      shape: { type: "circle" },
-      opacity: { value: 0.5, random: true },
-      size: { value: 3, random: true },
-      line_linked: {
-        enable: true,
-        distance: 150,
-        color: document.body.classList.contains("dark-mode")
-          ? "#8A85FF"
-          : "#6C63FF",
-        opacity: 0.4,
-        width: 1,
-      },
-      move: {
-        enable: true,
-        speed: 2,
-        direction: "none",
-        random: true,
-        straight: false,
-        out_mode: "out",
-      },
-    },
-    interactivity: {
-      detect_on: "canvas",
-      events: {
-        onhover: { enable: true, mode: "repulse" },
-        onclick: { enable: true, mode: "push" },
-      },
-    },
-  });
-
-  // Hide loading screen after page loads
-  setTimeout(() => {
-    loadingScreen.style.opacity = "0";
-    setTimeout(() => {
-      loadingScreen.style.display = "none";
-    }, 500);
-  }, 1500);
-
   // Render projects
   renderProjects(projects);
 
@@ -251,24 +203,24 @@ function toggleTheme() {
     icon.classList.remove("fa-moon");
     icon.classList.add("fa-sun");
     // Update particle color for dark mode
-    particlesJS("particles-js", {
-      particles: {
-        number: { value: 80, density: { enable: true, value_area: 800 } },
-        color: { value: "#8A85FF" },
-        line_linked: { color: "#8A85FF" },
-      },
-    });
+    // particlesJS("particles-js", {
+    //   particles: {
+    //     number: { value: 80, density: { enable: true, value_area: 100 } },
+    //     color: { value: "#8A85FF" },
+    //     line_linked: { color: "#8A85FF" },
+    //   },
+    // });
   } else {
     icon.classList.remove("fa-sun");
     icon.classList.add("fa-moon");
     // Update particle color for light mode
-    particlesJS("particles-js", {
-      particles: {
-        number: { value: 80, density: { enable: true, value_area: 800 } },
-        color: { value: "#6C63FF" },
-        line_linked: { color: "#6C63FF" },
-      },
-    });
+    // particlesJS("particles-js", {
+    //   particles: {
+    //     number: { value: 80, density: { enable: true, value_area: 100 } },
+    //     color: { value: "#6C63FF" },
+    //     line_linked: { color: "#6C63FF" },
+    //   },
+    // });
   }
 
   // Save theme preference to localStorage
