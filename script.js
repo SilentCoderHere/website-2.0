@@ -111,6 +111,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Initialize scroll animations
   initScrollAnimations();
+
+  // Animate skill bars
+  animateSkillBars();
 });
 
 // Render projects to the grid
@@ -308,8 +311,34 @@ function initScrollAnimations() {
   });
 
   // Observe other elements
-  document.querySelectorAll(".skill, .contact-item").forEach((el) => {
-    observer.observe(el);
+  document
+    .querySelectorAll(
+      ".skill, .contact-item, .service-card, .testimonial-card, .blog-card"
+    )
+    .forEach((el) => {
+      observer.observe(el);
+    });
+}
+
+// Animate skill bars
+function animateSkillBars() {
+  const skillBars = document.querySelectorAll(".skill-progress");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const width = entry.target.getAttribute("data-width");
+          entry.target.style.width = width + "%";
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.5 }
+  );
+
+  skillBars.forEach((bar) => {
+    observer.observe(bar);
   });
 }
 
